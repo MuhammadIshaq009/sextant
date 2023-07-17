@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../banner/banner';
-import IPAddress from '../IPAddress'; // Import the new component
+import IPAddress from '../IPAddress';
+import LatencyDisplay from '../LatencyDisplay'; // Import the new component
 
 const Exhibit = ({ children, ipvVersion }) => {
   return (
@@ -11,6 +12,7 @@ const Exhibit = ({ children, ipvVersion }) => {
       <div className="exhibit-content">
         {children}
         <IPAddress ipvVersion={ipvVersion} />
+        <LatencyDisplay /> {/* Display packet latency */}
       </div>
     </div>
   );
