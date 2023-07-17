@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Exhibit from './components/exhibit/exhibit';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Exhibit ipvVersion="v4" />
+      <Exhibit ipvVersion="v6" />
     </div>
   );
 }
